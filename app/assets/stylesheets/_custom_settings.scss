@@ -5,14 +5,7 @@
 //
 
 .top-links{
-   background: #E6E6E6 !important;
-   border: 5px solid transparent;
-   -webkit-border-image: url(/assets/bottom-border.jpg) 100 round; /* Safari 3.1-5 */
-   -o-border-image: url(/assets/bottom-border.jpg) 100 round; /* Opera 11-12.1 */
-   border-image: url(/assets/bottom-border.jpg) 100 round!important;
-   border-style: solid!important;
-   border-image-outset: 10px;
-   border-top:0!important;
+   background: linear-gradient(70deg, #C53BA6 20%, transparent 20%), linear-gradient(45deg, #EA620D 40%, transparent 40%), linear-gradient(30deg, #97BF0D 50%, transparent 50%), linear-gradient(20deg, #F29400 65%, #0E72B5 40%) !important;
 }
 
 .mySlides {
@@ -50,6 +43,9 @@
   min-height: 10px;
   padding:0;
   border-radius: 100%!important;
+
+   
+
 }
 
 header{
@@ -68,17 +64,21 @@ header .top-bar{
   width: 40%!important;
 }
 
+
 .auth-image h1 img{
 width: 15rem!important;
 }
+
 
 .locale-form{
   display:none!important;
 }
 
+
 .callout.primary a{
   color: rgb(151, 191, 13)!important;
 }
+
 
 header .external-links {
   display: none!important;
@@ -138,11 +138,17 @@ a{
 }
 
 
+
 .more-info-content h3 {
     color: #222!important;
 }
 
 .tags a, .tag-cloud a, .categories a, .geozone a, .sidebar-links a, .tags span{
+  background: #CAFFBE!important;
+  color: #42663A!important;
+}
+.categories a{
+
   background: #CAFFBE!important;
   color: #42663A!important;
 }
@@ -165,11 +171,24 @@ a{
 }
 
 .tags a:hover, .tag-cloud a:hover, .categories a:hover, .geozone a:hover, .sidebar-links a:hover, .tags span:hover{
+
+
+.more-info-content h3 {
+    color: #222!important;
+}
+
+
+.categories a:hover{
   background: #97BF0D !important;
   color: #FFFFFF!important;
 }
 
+
 .tags a:focus, .tag-cloud a:focus, .categories a:focus, .geozone a:focus, .sidebar-links a:focus, .tags span:focus{
+  background: #97BF0D !important;
+  color: #FFFFFF!important;
+}
+.categories a:focus{
   background: #97BF0D !important;
   color: #FFFFFF!important;
 }
@@ -189,6 +208,7 @@ a{
   background: #78980a !important;
 }
 
+
 .debate-show aside h2, .proposal-show aside h2, .poll-question-show aside h2, .investment-project-show aside h2, .budget-investment-show aside h2, .polls-show aside h2, .debate-quiz aside h2, .budget-investment-show aside h2, .draft-panels aside h2, .debate-questions aside h2, .communities-show aside h2, .topic-show aside h2, .milestone-content aside h2{
   border-top: 2px solid #78980a!important;
 }
@@ -205,6 +225,7 @@ a{
 .debate-show .author a, .proposal-show .author a, .poll-question-show .author a, .investment-project-show .author a, .budget-investment-show .author a, .polls-show .author a, .debate-quiz .author a, .budget-investment-show .author a, .draft-panels .author a, .debate-questions .author a, .communities-show .author a, .topic-show .author a, .milestone-content .author a{
   color: #78980a!important;
 }
+
 
 .budget-timeline .phase.active::before {
     background-color: #78980a !important;
@@ -336,6 +357,11 @@ p a small:hover{
 
 .button.button-google{
   background: #fcedea!important;
+}
+
+
+.button{
+  background: #97BF0D!important;
 }
 
 .button.hollow:hover, .button.hollow:focus {
