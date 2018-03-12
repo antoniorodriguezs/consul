@@ -3,3 +3,158 @@
 // * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
 //
+
+.top-links{
+   background: linear-gradient(70deg, #C53BA6 20%, transparent 20%), linear-gradient(45deg, #EA620D 40%, transparent 40%), linear-gradient(30deg, #97BF0D 50%, transparent 50%), linear-gradient(20deg, #F29400 65%, #0E72B5 40%) !important;
+}
+
+header{
+  background: #FFFFFF!important;
+}
+
+.top-bar .top-bar-title a img{
+  width: 260px!important;
+}
+
+header .top-bar{
+    background: #FFFFFF!important;
+}
+
+.medium-8{
+  width: 40%!important;
+}
+
+.locale-form{
+  display:none!important;
+}
+
+header .external-links {
+  display: none!important;
+}
+
+.top-bar .menu > li .button{
+  background: #97BF0D !important;
+  color: #FFFFFF!important;
+}
+
+.top-bar .menu > li a{
+  color: #78980a !important;
+}
+
+.subnavigation a.active{
+    border-bottom: 2px solid #78980a !important;
+    color: #78980a !important;
+}
+
+.subnavigation a:focus{
+  color: #78980a !important;
+}
+
+.subnavigation a:hover{
+  color: #78980a !important;
+}
+
+.submenu .active {
+    border-bottom: 2px solid #78980a !important;
+    color: #78980a !important;
+}
+
+.submenu a:focus{
+  color: #78980a !important;
+}
+
+a{
+  color: #78980a;
+}
+
+.submenu a:hover{
+  color: #78980a !important;
+}
+
+.advanced-search .small a {
+  color: #78980a !important;
+}
+
+.sidebar-title{
+  border-top: 2px solid #78980a!important;
+}
+
+.callout.primary{
+  background: #CAFFBE!important;
+  color: #42663A!important;
+  border-color: #AFFF9D!important;
+}
+
+.categories a{
+  background: #CAFFBE!important;
+  color: #42663A!important;
+}
+
+
+.more-info-content h3 {
+    color: #222!important;
+}
+
+
+.categories a:hover{
+  background: #97BF0D !important;
+  color: #FFFFFF!important;
+}
+
+.categories a:focus{
+  background: #97BF0D !important;
+  color: #FFFFFF!important;
+}
+
+.budget-timeline{
+  border-left-color: #97BF0D !important;
+}
+
+.expanded.budget{
+  background: #97BF0D !important;
+}
+
+.expanded.budget .info{
+  background: #78980a !important;
+}
+
+.budget-timeline .phase.active::before {
+    background-color: #78980a !important;
+}
+
+.budget-timeline .phase.active h3 {
+    background: #78980a !important;
+}
+
+.budget-timeline .phase::before {
+  border-top-color: #97BF0D !important;
+  border-right-color: #97BF0D !important;
+  border-bottom-color: #97BF0D !important;
+  border-left-color: #97BF0D !important;
+}
+
+.button{
+  background: #97BF0D!important;
+}
+
+.button.hollow:hover, .button.hollow:focus {
+  border-color:  #42663A !important;
+  color: #42663A !important;
+}
+
+.button.hollow{
+  border-color:  #42663A !important;
+  color: #42663A !important;
+}
+
+.highlight{
+  background: #E6E6E6!important;
+}
+
+.subnavigation{
+  background: #FFFFFF!important;
+}
+
+.footer{
+  border-top-color: #97BF0D!important;
+}
