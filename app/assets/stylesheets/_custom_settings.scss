@@ -50,6 +50,9 @@
   min-height: 10px;
   padding:0;
   border-radius: 100%!important;
+
+   background: linear-gradient(70deg, #C53BA6 20%, transparent 20%), linear-gradient(45deg, #EA620D 40%, transparent 40%), linear-gradient(30deg, #97BF0D 50%, transparent 50%), linear-gradient(20deg, #F29400 65%, #0E72B5 40%) !important;
+
 }
 
 header{
@@ -68,6 +71,7 @@ header .top-bar{
   width: 40%!important;
 }
 
+
 .auth-image h1 img{
 width: 15rem!important;
 }
@@ -75,6 +79,7 @@ width: 15rem!important;
 .locale-form{
   display:none!important;
 }
+
 
 .callout.primary a{
   color: rgb(151, 191, 13)!important;
@@ -138,6 +143,7 @@ a{
 }
 
 
+
 .more-info-content h3 {
     color: #222!important;
 }
@@ -146,6 +152,12 @@ a{
   background: #CAFFBE!important;
   color: #42663A!important;
 }
+
+.categories a{
+  background: #CAFFBE!important;
+  color: #42663A!important;
+}
+
 
 .jumbo-budget .button{
   color:  #78980a !important;
@@ -169,7 +181,24 @@ a{
   color: #FFFFFF!important;
 }
 
+.more-info-content h3 {
+    color: #222!important;
+}
+
+
+.categories a:hover{
+  background: #97BF0D !important;
+  color: #FFFFFF!important;
+}
+
+
 .tags a:focus, .tag-cloud a:focus, .categories a:focus, .geozone a:focus, .sidebar-links a:focus, .tags span:focus{
+  background: #97BF0D !important;
+  color: #FFFFFF!important;
+}
+
+.categories a:focus{
+
   background: #97BF0D !important;
   color: #FFFFFF!important;
 }
@@ -179,10 +208,7 @@ a{
 }
 
 .expanded.budget{
-  background: #97BF0D url(/assets/banner1.png)!important;
-  background-size:cover!important;
-  -webkit-background-origin:border!important;
-
+  background: #97BF0D !important;
 }
 
 .expanded.budget .info{
@@ -206,6 +232,7 @@ a{
   color: #78980a!important;
 }
 
+
 .budget-timeline .phase.active::before {
     background-color: #78980a !important;
 }
@@ -220,6 +247,7 @@ a{
   border-bottom-color: #97BF0D !important;
   border-left-color: #97BF0D !important;
 }
+
 
 .menu.simple h2{
   color: #78980a !important;
@@ -338,10 +366,16 @@ p a small:hover{
   background: #fcedea!important;
 }
 
+
+.button{
+  background: #97BF0D!important;
+}
+
 .button.hollow:hover, .button.hollow:focus {
   border-color:  #42663A !important;
   color: #42663A !important;
 }
+
 
 .button{
   background: #97BF0D!important;
