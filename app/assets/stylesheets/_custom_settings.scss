@@ -5,7 +5,14 @@
 //
 
 .top-links{
-   background: linear-gradient(70deg, #C53BA6 20%, transparent 20%), linear-gradient(45deg, #EA620D 40%, transparent 40%), linear-gradient(30deg, #97BF0D 50%, transparent 50%), linear-gradient(20deg, #F29400 65%, #0E72B5 40%) !important;
+   background: #E6E6E6 !important;
+   border: 5px solid transparent;
+   -webkit-border-image: url(/assets/bottom-border.jpg) 100 round; /* Safari 3.1-5 */
+   -o-border-image: url(/assets/bottom-border.jpg) 100 round; /* Opera 11-12.1 */
+   border-image: url(/assets/bottom-border.jpg) 100 round!important;
+   border-style: solid!important;
+   border-image-outset: 10px;
+   border-top:0!important;
 }
 
 header{
@@ -22,6 +29,10 @@ header .top-bar{
 
 .medium-8{
   width: 40%!important;
+}
+
+.auth-image h1 img{
+width: 15rem!important;
 }
 
 .locale-form{
@@ -133,8 +144,45 @@ a{
   border-left-color: #97BF0D !important;
 }
 
-.button{
+.menu.simple h2{
+  color: #78980a !important;
+}
+
+.menu.simple li a:hover{
+  color: #78980a !important;
+}
+
+.help-header div a{
+  color: #78980a !important;
+}
+
+.menu.simple li.active {
+	border-bottom: 2px solid #78980a!important;
+}
+
+.auth-image {
+	background: #78980a url(/assets/auth_bg.jpg)!important;
+	background-repeat: no-repeat!important;
+}
+
+.auth-form p a, .auth-form span a, .auth-form .text-center a, .auth-form  a.float-right {
+  color: #78980a!important;
+}
+
+.button.expanded{
   background: #97BF0D!important;
+}
+
+.button.button-twitter{
+  background: #ecf7fc!important;
+}
+
+.button.button-facebook{
+  background: #ebeef4!important;
+}
+
+.button.button-google{
+  background: #fcedea!important;
 }
 
 .button.hollow:hover, .button.hollow:focus {
