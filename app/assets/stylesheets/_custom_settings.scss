@@ -15,6 +15,43 @@
    border-top:0!important;
 }
 
+.mySlides {
+  display:none;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+}
+
+.w3-content{
+  max-width: 100%!important;
+}
+
+.jumbow3{
+    margin-bottom: 1.5rem;
+    margin-top: -1.5rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+
+.w3-display-container{
+  width: 100%;
+  max-height: 400px;
+}
+
+.subfooter .medium-4{
+  width: 31.333%!important;
+} 
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer;
+}
+
+.w3-badge {
+  height:10px;
+  width:10px;
+  padding:0;
+}
+
 header{
   background: #FFFFFF!important;
 }
@@ -96,23 +133,39 @@ a{
   border-color: #AFFF9D!important;
 }
 
-.categories a{
-  background: #CAFFBE!important;
-  color: #42663A!important;
-}
-
 
 .more-info-content h3 {
     color: #222!important;
 }
 
+.tags a, .tag-cloud a, .categories a, .geozone a, .sidebar-links a, .tags span{
+  background: #CAFFBE!important;
+  color: #42663A!important;
+}
 
-.categories a:hover{
+.jumbo-budget .button{
+  color:  #78980a !important;
+}
+
+.jumbo-budget {
+    background: #78980a!important;
+    border-bottom: 1px solid #97BF0D!important;
+}
+
+.progress-bar-nav {
+    background-color: #78980a!important;
+}
+
+.progress-votes .progress{
+  background: #242d03!important;
+}
+
+.tags a:hover, .tag-cloud a:hover, .categories a:hover, .geozone a:hover, .sidebar-links a:hover, .tags span:hover{
   background: #97BF0D !important;
   color: #FFFFFF!important;
 }
 
-.categories a:focus{
+.tags a:focus, .tag-cloud a:focus, .categories a:focus, .geozone a:focus, .sidebar-links a:focus, .tags span:focus{
   background: #97BF0D !important;
   color: #FFFFFF!important;
 }
@@ -122,11 +175,31 @@ a{
 }
 
 .expanded.budget{
-  background: #97BF0D !important;
+  background: #97BF0D url(/assets/banner1.png)!important;
+  background-size:cover!important;
+  -webkit-background-origin:border!important;
+
 }
 
 .expanded.budget .info{
   background: #78980a !important;
+}
+
+.debate-show aside h2, .proposal-show aside h2, .poll-question-show aside h2, .investment-project-show aside h2, .budget-investment-show aside h2, .polls-show aside h2, .debate-quiz aside h2, .budget-investment-show aside h2, .draft-panels aside h2, .debate-questions aside h2, .communities-show aside h2, .topic-show aside h2, .milestone-content aside h2{
+  border-top: 2px solid #78980a!important;
+}
+
+.tabs .tabs-title > a[aria-selected="true"], .tabs .tabs-title > a.is-active {
+  color: #78980a!important;
+  border-bottom: 2px #78980a!important;
+}
+
+.user-name a{
+  color: #78980a!important;
+}
+
+.debate-show .author a, .proposal-show .author a, .poll-question-show .author a, .investment-project-show .author a, .budget-investment-show .author a, .polls-show .author a, .debate-quiz .author a, .budget-investment-show .author a, .draft-panels .author a, .debate-questions .author a, .communities-show .author a, .topic-show .author a, .milestone-content .author a{
+  color: #78980a!important;
 }
 
 .budget-timeline .phase.active::before {
@@ -201,6 +274,10 @@ p a small:hover{
   color: #78980a!important;
 }
 
+.more-info-content a:not(.button){
+  color: #78980a!important;
+}
+
 .expanded.budget .button{
   color: #fff!important;
 }
@@ -226,6 +303,22 @@ p a small:hover{
 }
 
 .button.expanded{
+  background: #97BF0D!important;
+}
+
+.draft-panels .draft-chooser .button{
+  background: #97BF0D!important;
+}
+
+.debate-questions .quiz-header .quiz-title{
+  background: #CAFFBE !important;
+}
+
+.debate-questions .quiz-header .quiz-next{
+  background: #AFFF9D !important;
+}
+
+.debate-questions .quiz-header .quiz-next:hover{
   background: #97BF0D!important;
 }
 
