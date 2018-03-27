@@ -164,9 +164,7 @@ ignore_unused:
   - 'proposals.index.section_header.*'
   - 'spending_proposals.index.search_form.*'
   - '*.index.search_form.*'
-  - 'notifications.index.comments_on*'
-  - 'notifications.index.replies_to*'
-  - 'notifications.index.proposal_notification*'
+  - 'notifications.notification.action.*'
   - 'legislation.processes.index.filter*'
   - 'legislation.processes.index.section_header.*'
   - 'helpers.page_entries_info.*' # kaminari
@@ -176,11 +174,11 @@ ignore_unused:
   - 'admin.site_customization.pages.page.status_*'
   - 'admin.legislation.processes.process.*'
   - 'legislation.processes.index.*'
+  - 'votes.budget_investments.different_heading_assigned*'
 # - '{devise,kaminari,will_paginate}.*'
 # - 'simple_form.{yes,no}'
 # - 'simple_form.{placeholders,hints,labels}.*'
 # - 'simple_form.{error_notification,required}.:'
-
 ## Exclude these keys from the `i18n-tasks eq-base' report:
 # ignore_eq_base:
 #   all:

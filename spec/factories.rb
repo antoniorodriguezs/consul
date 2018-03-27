@@ -705,6 +705,10 @@ FactoryBot.define do
   factory :notification do
     user
     association :notifiable, factory: :proposal
+
+    trait :read do
+      read_at Time.current
+    end
   end
 
   factory :geozone do
@@ -941,6 +945,13 @@ LOREM_IPSUM
   end
 
   factory :related_content do
+  end
+
+  factory :newsletter do
+    sequence(:subject) { |n| "Subject #{n}" }
+    segment_recipient  UserSegments::SEGMENTS.sample
+    sequence(:from)    { |n| "noreply#{n}@consul.dev" }
+    sequence(:body)    { |n| "Body #{n}" }
   end
 
 end

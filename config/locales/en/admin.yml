@@ -106,6 +106,8 @@ en:
         no_groups: No groups created yet. Each user will be able to vote in only one heading per group.
         add_group: Add new group
         create_group: Create group
+        edit_group: Edit group
+        submit: Save group
         heading: Heading name
         add_heading: Add heading
         amount: Amount
@@ -117,6 +119,7 @@ en:
         table_amount: Amount
         table_population: Population
         population_info: "Budget Heading population field is used for Statistic purposes at the end of the Budget to show for each Heading that represents an area with population what percentage voted. The field is optional so you can leave it empty if it doesn't apply."
+        max_votable_headings: "Maxium number of headings in which a user can vote"
       winners:
         calculate: Calculate Winner Investments
         calculated: Winners being calculated, it may take a minute.
@@ -193,7 +196,7 @@ en:
         edit_classification: Edit classification
         by: By
         sent: Sent
-        group: Grupo
+        group: Group
         heading: Heading
         dossier: Dossier
         edit_dossier: Edit dossier
@@ -465,7 +468,9 @@ en:
       administrators: Administrators
       managers: Managers
       moderators: Moderators
-      newsletter: Newsletters
+      emails: Sending of emails
+      newsletters: Newsletters
+      emails_download: Emails download
       valuators: Valuators
       poll_officers: Poll officers
       polls: Polls
@@ -514,10 +519,53 @@ en:
         delete: Delete
       search:
         title: 'Moderators: User search'
+    segment_recipient:
+      all_users: All users
+      administrators: Administrators
+      proposal_authors: Proposal authors
+      investment_authors: Investment authors in the current budget
+      feasible_and_undecided_investment_authors: "Authors of some investment in the current budget that does not comply with: [valuation finished unfesasible]"
+      selected_investment_authors: Authors of selected investments in the current budget
+      winner_investment_authors: Authors of winner investments in the current budget
+      invalid_recipients_segment: "Recipients user segment is invalid"
     newsletters:
+      create_success: Newsletter created successfully
+      update_success: Newsletter updated successfully
+      send_success: Newsletter sent successfully
+      delete_success: Newsletter deleted successfully
       index:
         title: Newsletters
-        button: Download zip with users list
+        new_newsletter: New newsletter
+        subject: Subject
+        segment_recipient: Recipients
+        sent: Sent
+        actions: Actions
+        draft: Draft
+        edit: Edit
+        delete: Delete
+        preview: Preview
+        empty_newsletters: There are no newsletters to show
+      new:
+        title: New newsletter
+      edit:
+        title: Edit newsletter
+      show:
+        title: Newsletter preview
+        send: Send
+        affected_users: (%{n} affected users)
+        sent_at: Sent at
+        subject: Subject
+        segment_recipient: Recipients
+        from: From
+        body: Email content
+        body_help_text: This is how the users will see the email
+        send_alert: Are you sure you want to send this newsletter to %{n} users?
+    emails_download:
+      index:
+        title: Emails download
+        download_segment: Download email addresses
+        download_segment_help_text: Download in CSV format
+        download_emails_button: Download emails list
     valuators:
       index:
         title: Valuators

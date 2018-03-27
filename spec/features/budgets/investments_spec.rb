@@ -563,16 +563,13 @@ feature 'Budget Investments' do
     scenario 'Each user has a different and consistent random budget investment order when random_seed is disctint', :js do
       (Kaminari.config.default_per_page * 1.3).to_i.times { create(:budget_investment, heading: heading) }
 
-      r1 = 1
-      r2 = 2
-
       in_browser(:one) do
-        visit budget_investments_path(budget, heading: heading, random_seed: r1)
+        visit budget_investments_path(budget, heading: heading, random_seed: rand)
         @first_user_investments_order = investments_order
       end
 
       in_browser(:two) do
-        visit budget_investments_path(budget, heading: heading, random_seed: r2)
+        visit budget_investments_path(budget, heading: heading, random_seed: rand)
         @second_user_investments_order = investments_order
       end
 
@@ -931,7 +928,7 @@ feature 'Budget Investments' do
     user = create(:user)
     investment = create(:budget_investment)
     create(:budget_investment_milestone, investment: investment,
-                                         description: "Last milestone",
+                                         description: "Last milestone with a link to https://consul.dev",
                                          publication_date: Date.tomorrow)
     first_milestone = create(:budget_investment_milestone, investment: investment,
                                                            description: "First milestone",
@@ -945,12 +942,13 @@ feature 'Budget Investments' do
     find("#tab-milestones-label").trigger('click')
 
     within("#tab-milestones") do
-      expect(first_milestone.description).to appear_before('Last milestone')
+      expect(first_milestone.description).to appear_before('Last milestone with a link to https://consul.dev')
       expect(page).to have_content(Date.tomorrow)
       expect(page).to have_content(Date.yesterday)
       expect(page).not_to have_content(Date.current)
       expect(page.find("#image_#{first_milestone.id}")['alt']).to have_content(image.title)
       expect(page).to have_link(document.title)
+      expect(page).to have_link("https://consul.dev")
     end
   end
 

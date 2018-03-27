@@ -208,11 +208,11 @@ class Budget
     end
 
     def reason_for_not_being_ballotable_by(user, ballot)
-      return permission_problem(user)    if permission_problem?(user)
-      return :not_selected               unless selected?
-      return :no_ballots_allowed         unless budget.balloting?
-      return :different_heading_assigned unless ballot.valid_heading?(heading)
-      return :not_enough_money_html      if ballot.present? && !enough_money?(ballot)
+      return permission_problem(user)         if permission_problem?(user)
+      return :not_selected                    unless selected?
+      return :no_ballots_allowed              unless budget.balloting?
+      return :different_heading_assigned_html unless ballot.valid_heading?(heading)
+      return :not_enough_money_html           if ballot.present? && !enough_money?(ballot)
     end
 
     def permission_problem(user)
@@ -231,21 +231,20 @@ class Budget
     end
 
     def valid_heading?(user)
-      !different_heading_assigned?(user)
+      voted_in?(heading, user) ||
+      can_vote_in_another_heading?(user)
     end
 
-    def different_heading_assigned?(user)
-      other_heading_ids = group.heading_ids - [heading.id]
-      voted_in?(other_heading_ids, user)
+    def can_vote_in_another_heading?(user)
+      headings_voted_by_user(user).count < group.max_votable_headings
     end
 
-    def voted_in?(heading_ids, user)
-      heading_ids.include? heading_voted_by_user?(user)
+    def headings_voted_by_user(user)
+      user.votes.for_budget_investments(budget.investments.where(group: group)).votables.map(&:heading_id).uniq
     end
 
-    def heading_voted_by_user?(user)
-      user.votes.for_budget_investments(budget.investments.where(group: group))
-          .votables.map(&:heading_id).first
+    def voted_in?(heading, user)
+      headings_voted_by_user(user).include?(heading.id)
     end
 
     def ballotable_by?(user)

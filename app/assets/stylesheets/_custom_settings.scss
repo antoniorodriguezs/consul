@@ -5,7 +5,51 @@
 //
 
 .top-links{
-   background: linear-gradient(70deg, #C53BA6 20%, transparent 20%), linear-gradient(45deg, #EA620D 40%, transparent 40%), linear-gradient(30deg, #97BF0D 50%, transparent 50%), linear-gradient(20deg, #F29400 65%, #0E72B5 40%) !important;
+   background: #E6E6E6 !important;
+   border: 5px solid transparent;
+   -webkit-border-image: url(/assets/bottom-border.jpg) 100 round; /* Safari 3.1-5 */
+   -o-border-image: url(/assets/bottom-border.jpg) 100 round; /* Opera 11-12.1 */
+   border-image: url(/assets/bottom-border.jpg) 100 round!important;
+   border-style: solid!important;
+   border-image-outset: 10px;
+   border-top:0!important;
+}
+
+.mySlides {
+  display:none;
+  width: 100%;
+  height: 60vh;
+}
+
+.w3-content{
+  max-width: 100%!important;
+}
+
+.jumbow3{
+    margin-bottom: 1.5rem;
+    margin-top: -1.5rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+
+.w3-display-container{
+  width: 100%;
+  height: 60vh;
+}
+
+.subfooter .medium-4{
+  width: 31.333%!important;
+} 
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer;
+}
+
+.w3-badge {
+  height:1.2vh;
+  min-height: 10px;
+  padding:0;
+  border-radius: 100%!important;
 }
 
 header{
@@ -24,8 +68,16 @@ header .top-bar{
   width: 40%!important;
 }
 
+.auth-image h1 img{
+width: 15rem!important;
+}
+
 .locale-form{
   display:none!important;
+}
+
+.callout.primary a{
+  color: rgb(151, 191, 13)!important;
 }
 
 header .external-links {
@@ -85,23 +137,39 @@ a{
   border-color: #AFFF9D!important;
 }
 
-.categories a{
-  background: #CAFFBE!important;
-  color: #42663A!important;
-}
-
 
 .more-info-content h3 {
     color: #222!important;
 }
 
+.tags a, .tag-cloud a, .categories a, .geozone a, .sidebar-links a, .tags span{
+  background: #CAFFBE!important;
+  color: #42663A!important;
+}
 
-.categories a:hover{
+.jumbo-budget .button{
+  color:  #78980a !important;
+}
+
+.jumbo-budget {
+    background: #78980a!important;
+    border-bottom: 1px solid #97BF0D!important;
+}
+
+.progress-bar-nav {
+    background-color: #78980a!important;
+}
+
+.progress-votes .progress{
+  background: #242d03!important;
+}
+
+.tags a:hover, .tag-cloud a:hover, .categories a:hover, .geozone a:hover, .sidebar-links a:hover, .tags span:hover{
   background: #97BF0D !important;
   color: #FFFFFF!important;
 }
 
-.categories a:focus{
+.tags a:focus, .tag-cloud a:focus, .categories a:focus, .geozone a:focus, .sidebar-links a:focus, .tags span:focus{
   background: #97BF0D !important;
   color: #FFFFFF!important;
 }
@@ -111,11 +179,31 @@ a{
 }
 
 .expanded.budget{
-  background: #97BF0D !important;
+  background: #97BF0D url(/assets/banner1.png)!important;
+  background-size:cover!important;
+  -webkit-background-origin:border!important;
+
 }
 
 .expanded.budget .info{
   background: #78980a !important;
+}
+
+.debate-show aside h2, .proposal-show aside h2, .poll-question-show aside h2, .investment-project-show aside h2, .budget-investment-show aside h2, .polls-show aside h2, .debate-quiz aside h2, .budget-investment-show aside h2, .draft-panels aside h2, .debate-questions aside h2, .communities-show aside h2, .topic-show aside h2, .milestone-content aside h2{
+  border-top: 2px solid #78980a!important;
+}
+
+.tabs .tabs-title > a[aria-selected="true"], .tabs .tabs-title > a.is-active {
+  color: #78980a!important;
+  border-bottom: 2px #78980a!important;
+}
+
+.user-name a{
+  color: #78980a!important;
+}
+
+.debate-show .author a, .proposal-show .author a, .poll-question-show .author a, .investment-project-show .author a, .budget-investment-show .author a, .polls-show .author a, .debate-quiz .author a, .budget-investment-show .author a, .draft-panels .author a, .debate-questions .author a, .communities-show .author a, .topic-show .author a, .milestone-content .author a{
+  color: #78980a!important;
 }
 
 .budget-timeline .phase.active::before {
@@ -133,14 +221,137 @@ a{
   border-left-color: #97BF0D !important;
 }
 
-.button{
+.menu.simple h2{
+  color: #78980a !important;
+}
+
+.menu.simple li a:hover{
+  color: #78980a !important;
+}
+
+.help-header div a{
+  color: #78980a !important;
+}
+
+.menu.simple li.active {
+	border-bottom: 2px solid #78980a!important;
+}
+
+.auth-image {
+	background: #78980a url(/assets/auth_bg.jpg)!important;
+	background-repeat: no-repeat!important;
+}
+
+.auth-form p a, .auth-form span a, .auth-form .text-center a, .auth-form  a.float-right {
+  color: #78980a!important;
+}
+
+.debate-type{
+  color: #78980a!important;
+}
+
+.debate-title h4 a{
+  color: #78980a!important;
+}
+
+.legislation-process-list li:hover{
+  border-bottom: 2px solid #78980a!important;
+}
+
+.legislation-process-list li:focus{
+  border-bottom: 2px solid #78980a!important;
+}
+
+.legislation-process-list .active{
+  border-bottom: 2px solid #78980a!important;
+}
+
+.no-bullet .heading a{
+  color: #78980a!important;
+}
+
+p a small{
+  color: #78980a!important;
+}
+
+p a small:hover{
+  color: #78980a!important;
+}
+
+.more-info-content a:not(.button){
+  color: #78980a!important;
+}
+
+.expanded.budget .button{
+  color: #fff!important;
+}
+
+.investment-project-amount{
+  color: #78980a!important;
+}
+
+#js-advanced-search-title{
+  color: #78980a!important;
+}
+
+.button.hollow{
+  border: 1px solid #78980a!important;
+}
+
+#js-toggle-small-debate{
+  background: #97BF0D !important;
+}
+
+.small-12 a .button{
+  background: #97BF0D !important;
+}
+
+.button.expanded{
   background: #97BF0D!important;
+}
+
+.draft-panels .draft-chooser .button{
+  background: #97BF0D!important;
+}
+
+.debate-questions .quiz-header .quiz-title{
+  background: #CAFFBE !important;
+}
+
+.debate-questions .quiz-header .quiz-next{
+  background: #AFFF9D !important;
+}
+
+.debate-questions .quiz-header .quiz-next:hover{
+  background: #97BF0D!important;
+}
+
+.button.button-twitter{
+  background: #ecf7fc!important;
+}
+
+.button.button-facebook{
+  background: #ebeef4!important;
+}
+
+.button.button-google{
+  background: #fcedea!important;
 }
 
 .button.hollow:hover, .button.hollow:focus {
   border-color:  #42663A !important;
   color: #42663A !important;
 }
+
+.button{
+  background: #97BF0D!important;
+}
+
+
+.button:hover{
+  background: #b6d255!important;
+}
+
 
 .button.hollow{
   border-color:  #42663A !important;

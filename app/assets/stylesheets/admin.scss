@@ -10,6 +10,7 @@
 // 08. CMS
 // 09. Map
 // 10. Budgets
+// 11. Newsletters
 //
 
 // 01. Global styles
@@ -268,6 +269,7 @@ $sidebar-active: #f4fcd0;
 
   .input-group-button {
     padding-bottom: rem-calc(16);
+    vertical-align: top;
   }
 }
 
@@ -1089,6 +1091,27 @@ table {
     &::before {
       color: #000;
       content: '\76';
+    }
+  }
+}
+
+// 11. Newsletters
+// -----------------
+
+.newsletter-body-content {
+
+  table,
+  tbody,
+  tr,
+  th,
+  td {
+    border: 0;
+
+    &:nth-child(even),
+    &:nth-child(even) td:last-child,
+    &:nth-child(odd) td:last-child,
+    &:hover {
+      background: none;
     }
   }
 }
