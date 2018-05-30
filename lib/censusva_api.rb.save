@@ -1,0 +1,47 @@
+class CensusvaApi
+	
+	def call( document_type, document_number )
+		response = nil	
+		response = Response.new( get_response_body( document_type, document_number ) )
+		return response if response.valid?
+		response
+	end
+
+
+	class Response
+		def initialize( body )
+			@body = body
+		end
+
+		def valid?
+			data[:s][:res][:exito].equals(-1)
+		end
+
+		def postal_code
+			data[:codigoPostal]
+		end
+
+		def date_of_birth
+			data[:fechaNacimiento]
+		end
+
+		private
+			
+		def data
+			@body
+		end
+	end
+	
+	private
+
+	def get_response_body( document_type, document_number )
+	
+		client.call( e:{ sec:{
+ } }  )
+
+	end
+	
+	def client
+		@client = Savon.client(wsdl: "vmaccedeprub:8080/services/Ci")
+	end
+end

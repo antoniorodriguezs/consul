@@ -42,6 +42,7 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
     I18n.locale = :en
     load Rails.root.join('db', 'seeds.rb').to_s
+    Setting["feature.user.skip_verification"] = nil
   end
 
   config.before(:each, type: :feature) do
@@ -55,6 +56,10 @@ RSpec.configure do |config|
       # specs, so use truncation strategy.
       DatabaseCleaner.strategy = :truncation
     end
+  end
+
+  config.before(:each, type: :feature) do
+    Capybara.reset_sessions!
   end
 
   config.before do
