@@ -57,7 +57,7 @@ class Verification::Residenceva
 	end
 
 	def call_census_api
-		@census_api_response = CensusvaApi.new.call( document_type, document_number )
+		@census_api_response = CensusvaApi.new.call( document_type, document_number, postal_code )
 	end
 
 	def residence_in_va

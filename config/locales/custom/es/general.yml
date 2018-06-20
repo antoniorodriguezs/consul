@@ -123,13 +123,13 @@ es:
       section_header:
         icon_alt: Icono de Debates
         title: Debates
-        help: Ayuda sobre los debates
+        help: ¿Cómo funcionan los debates?
       section_footer:
-        title: Ayuda sobre los debates
+        title: ¿Cómo funcionan los debates?
         description: Inicia un debate para compartir puntos de vista con otras personas sobre los temas que te preocupan.
         help_text_1: "El espacio de debates ciudadanos está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas."
-        help_text_2: 'Para abrir un debate es necesario registrarse en %{org}. Los usuarios ya registrados también pueden comentar los debates abiertos y valorarlos con los botones de "Estoy de acuerdo" o "No estoy de acuerdo" que se encuentran en cada uno de ellos.'
-        help_text_3: "Ten en cuenta que un debate no activa ningún mecanismo de actuación concreto. Si quieres hacer una %{proposal} para la provincia o plantear un proyecto de %{budget} cuando se abra la convocatoria, ve a la sección correspondiente."
+        help_text_2: 'Para abrir un debate es necesario registrarse en la Plataforma de Participación de la Diputación de Valladolid. Los usuarios ya registrados también pueden comentar los debates abiertos y valorarlos con los botones de "Estoy de acuerdo" o "No estoy de acuerdo" que se encuentran en cada uno de ellos.'
+        help_text_3: "Ten en cuenta que un debate no activa ningún mecanismo de actuación concreto. Si quieres hacer una %{proposal} para la provincia a través de los %{budget} cuando se abra la convocatoria, ve a la sección correspondiente."
         proposals_link: propuesta
         budget_link: presupuestos participativos
     new:
@@ -218,7 +218,7 @@ es:
       administration_menu: Admin
       administration: Administración
       available_locales: Idiomas disponibles
-      collaborative_legislation: Procesos legislativos
+      collaborative_legislation: Procesos normativos
       debates: Debates
       external_link_blog: Blog
       external_link_opendata: Datos abiertos
@@ -240,8 +240,8 @@ es:
         other: Tienes %{count} notificaciones nuevas
       no_notifications: "No tienes notificaciones nuevas"
       open: abierto
-      open_city_slogan_html: Existen poblaciones gobernadas directamente por sus habitantes, que <strong>debaten</strong> sobre temas que les preocupan, <strong>proponen</strong> ideas para mejorar sus vidas y <strong>deciden</strong> entre todas y todos las que se llevan a cabo.
-      open_city_title: La provincia que quieres será la provincia que quieras
+      open_city_slogan_html: Regístrate y debate sobre los que temas que te preocupan, propón ideas para mejorar tu pueblo y tu comarca y decidamos colectivamente cómo llevarlas a cabo.
+      open_city_title: Decide cómo quieres que sea tu provincia
       open_gov: Gobierno %{open}
       proposals: Propuestas
       poll_questions: Votaciones
@@ -773,16 +773,16 @@ es:
       different_heading_assigned: Sólo puedes apoyar proyectos de gasto de una partida
   welcome:
     debates:
-      description: Encontrarnos, debatir y compartir lo que nos parece importante en nuestra provincia.
+      description: Comparte y debate lo que te parezca importante para nuestra provincia.
       title: Debates
     decide:
-      description: La ciudadanía decide si acepta o rechaza las propuestas más apoyadas.
+      description: Todos los habitantes de la provincia podremos decidir si las propuestas realizadas se llevan a cabo.
       title: Decides
     do:
-      description: Si la propuesta es aceptada mayoritariamente, el Ayuntamiento la asume como propia y se hace.
+      description: Si la propuesta es aceptada mayoritariamente, tu Ayuntamiento o la Diputación la llevarán a cabo.
       title: Se hace
     proposal:
-      description: Espacio abierto para propuestas ciudadanas sobre el tipo de provincia en el que queremos vivir.
+      description: Realiza propuestas concretas para mejorar el lugar donde vives.
       title: Propones
     recommended:
       title: Recomendaciones que te pueden interesar

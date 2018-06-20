@@ -4,22 +4,22 @@ es:
     conditions: Condiciones de uso
     general_terms: Términos y Condiciones
     help:
-      title: "%{org} es una plataforma de participación ciudadana"
-      subtitle: "En %{org} se pueden hacer propuestas, votar en consultas ciudadanas, plantear proyectos de presupuestos participativos, decidir la normativa municipal y abrir debates para intercambiar opiniones con otras personas."
-      guide: 'Esta guía explica para qué sirven y cómo funcionan cada una de las secciones de %{org}.'
+      title: "¿Qué es la Plataforma de Participación Ciudadana de la Diputación de Valladolid?"
+      subtitle: "Es una herramienta al servicio de la participación en la que se pueden hacer propuestas, votar en consultas ciudadanas, plantear proyectos de presupuestos participativos, opinar sobre normativa y abrir debates para intercambiar opiniones con otras personas. Navegando descubrirás cuáles de estas opciones están disponibles en cada momento."
+      guide: 'Esta guía explica para qué sirven y cómo funcionan cada una de las secciones de esta Plataforma.'
       menu:
         debates: "Debates"
         proposals: "Propuestas"
         budgets: "Presupuestos participativos"
         polls: "Votaciones"
         other: "Otra información de interés"
-        processes: "Procesos legislativos"
+        processes: "Procesos normativos"
       debates:
         title: "Debates"
-        description: "En la sección de %{link} puedes exponer y compartir tu opinión con otras personas sobre temas que te preocupan relacionados con la provincia. También es un espacio donde generar ideas que a través de las otras secciones de %{org} lleven a actuaciones concretas por parte de la Diputación."
+        description: "En la sección de %{link} puedes exponer y compartir tu opinión con otras personas sobre temas que te preocupan relacionados con la provincia. También es un espacio donde generar ideas que a través de las otras secciones de la Plataforma de Participación de la Diputación de Valladolid lleven a actuaciones concretas por parte de la institución provincial."
         link: "debates ciudadanos"
         feature_html: "Puedes abrir debates, comentarlos y valorarlos con los botones de <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong>. Para ello tienes que %{link}."
-        feature_link: "registrarte en %{org}"
+        feature_link: "registrarte en la Plataforma"
         image_alt: "Botones para valorar los debates"
         figcaption: 'Botones "Estoy de acuerdo" y "No estoy de acuerdo" para valorar los debates.'
       proposals:
@@ -31,12 +31,12 @@ es:
         figcaption_html: 'Botón para "Apoyar" una propuesta.<br>Cuando alcance el número de apoyos pasará a votación.'
       budgets:
         title: "Presupuestos participativos"
-        description: "La sección de %{link} sirve para que la gente decida de manera directa a qué se destina una parte del presupuesto municipal."
+        description: "La sección de %{link} sirve para que la gente decida de manera directa a qué se destina una parte del Presupuesto Provincial."
         link: "presupuestos participativos"
-        feature: "En este proceso cada año la gente plantea, apoya y vota proyectos. Los más votados pasan a financiarse con el presupuesto municipal."
-        phase_1_html: "Entre enero y principios de marzo, las personas registradas en %{org} pueden <strong>presentar proyectos</strong>."
-        phase_2_html: "En marzo, los proponentes tienen que recabar apoyos, a modo de <strong>fase de preselección</strong>."
-        phase_3_html: "Entre abril y comienzos de mayo los técnicos de la Diputación <strong>tasan los proyectos</strong> por orden de más a menos apoyados y comprueban que son viables."
+        feature: "En este proceso cada año la gente plantea, apoya y vota proyectos. Los más votados pasan a financiarse con el presupuesto provincial."
+        phase_1_html: "En una primera fase, las personas mayores de 16 años empadronadas en municipios de la provincia y registradas en la Plataforma pueden <strong>presentar proyectos.</strong>"
+        phase_2_html: "Una vez evaluada su viabilidad técnica y económica por los técnicos de la Diputación, se <strong>someten a votación de toda la ciudadanía.</strong>"
+        phase_3_html: "Aquellas <strong>propuestas más votadas</strong> se incorporan al Presupuesto Provincial y se ejecutarán por la Diputación."
         phase_4_html: "Finalmente, entre mayo y junio, toda la ciudadanía puede <strong>votar los proyectos</strong> que más le interesan."
         phase_5_html: "A partir de la aprobación de los presupuestos al año siguiente la Diputación empieza a llevar a cabo los proyectos ganadores."
         image_alt: "Diferentes fases de un presupuesto participativo"
@@ -50,11 +50,11 @@ es:
         feature_2: "Pueden votar todas las personas empadronadas en la provincia mayores de 16 años."
         feature_3: "Los resultados de todas las votaciones son vinculantes para el gobierno municipal."
       processes:
-        title: "Procesos legislativos"
+        title: "Procesos normativos"
         description: "En la sección de %{link} la ciudadanía participa en la elaboración y modificación de normativa que afecta a la provincia y puede dar su opinión sobre las políticas municipales en debates previos."
-        link: "procesos legislativos"
+        link: "procesos normativos"
         feature: "Para participar en un proceso hay que %{sign_up} y consultar la página de %{link} periódicamente para saber qué normativas y políticas se están debatiendo y consultando."
-        sign_up: "registrarse en %{org}"
+        sign_up: "registrarse en la Plataforma de Participación"
       faq:
         title: "¿Problemas técnicos?"
         description: "Lee las preguntas frecuentes y resuelve tus dudas."

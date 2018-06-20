@@ -41,6 +41,24 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+
+  # SMTP server configuration.
+  config.i18n.default_locale = :'es'
+  config.action_mailer.default_url_options = { :host => "" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
+      :address              => '',
+      :port                 => 587,
+      :domain               => '',
+      :user_name            => '',
+      :password             => '',
+      :authentication       => '',
+      :enable_starttls_auto => true,
+      :ssl                  => false
+	}
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
