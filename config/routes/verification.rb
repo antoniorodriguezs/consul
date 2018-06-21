@@ -7,5 +7,4 @@ scope module: :verification do
   resource :letter, controller: "letter", only: [:new, :create, :show, :edit, :update]
 end
 
-resource :verification, controller: "verificationva_controller", only [:show]
-resource :verification, controller: "verification", only: [:show]
+
