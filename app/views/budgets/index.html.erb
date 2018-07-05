@@ -12,10 +12,11 @@
           <div class="description">
             <%= safe_html_with_links(current_budget.description) %>
           </div>
-          <p>
-            <%= link_to t("budgets.index.section_header.help"), "#section_help" %>
-          </p>
-        </div>
+          <!-- <p><%= link_to t("budgets.index.section_header.help"), "#section_help" %> </p> -->
+		  <p>
+		    <%=  link_to 'Bases de funcionamiento Presupuesto Participativo Tudela de Duero 2019', asset_path('/docs/basesfuncionamiento.pdf')  %>
+		  </p>
+		</div>
         <div class="small-12 medium-3 column info padding" data-equalizer-watch>
           <p>
             <strong><%= t("budgets.show.phase") %></strong>
@@ -88,21 +89,23 @@
           <!--<div id="map">
             <h3><%= t("budgets.index.map") %></h3>
             <%= render_map(nil, "budgets", false, nil, @budgets_coordinates) %>
-          </div> -->
-          <small><%= link_to t("budgets.index.section_footer.help_text_10"), "#section_zona" %></small>
+          </div> -->         
           <p>
+          <%= link_to 'Bases de funcionamiento Presupuesto Participativo Tudela de Duero 2019', asset_path('/docs/basesfuncionamiento.pdf') %>
+    	  </p>
+
             <% show_links = show_links_to_budget_investments(current_budget) %>
             <% if show_links %>
               <%= link_to budget_investments_path(current_budget.id) do %>
-                <small><%=link_to t("budgets.index.investment_proyects") , "#" %></small>
+                <!-- <p><%=link_to t("budgets.index.investment_proyects") , "#" %></p> -->
               <% end %><br>
             <% end %>
             <%= link_to budget_investments_path(budget_id: current_budget.id, filter: 'unfeasible') do %>
-              <small><%=link_to t("budgets.index.unfeasible_investment_proyects") , "#" %></small>
+              <p><%=link_to t("budgets.index.unfeasible_investment_proyects") , "#" %></p>
             <% end %><br>
             <% if show_links %>
               <%= link_to budget_investments_path(budget_id: current_budget.id, filter: 'unselected') do %>
-                <small><%=link_to t("budgets.index.not_selected_investment_proyects") , "#" %></small>
+                <p><%=link_to t("budgets.index.not_selected_investment_proyects") , "#" %></p>
               <% end %>
             <% end %>
           </p>
@@ -175,11 +178,11 @@
 <div class="row">
   <div class="small-12 column">
     <div id="section_help" class="margin" data-magellan-target="section_help">
-      <p class="lead">
+     <!-- <p class="lead">
         <strong><%= t("budgets.index.section_footer.title") %></strong>
       </p>
       <p><%= t("budgets.index.section_footer.description") %></p>
-      <p class="lead">
+      <!--<p class="lead">
         <strong><%= t("budgets.index.section_footer.help_text_titulo1") %></strong>
       </p>
       <p><%= t("budgets.index.section_footer.help_text_1") %></p>
@@ -256,7 +259,7 @@
       <p><%= t("budgets.index.section_footer.help_text_6_2_3") %></p>        
       <p>&nbsp;&nbsp;&nbsp;<%= t("budgets.index.section_footer.help_text_6_2_2_1") %></p>
       <p>&nbsp;&nbsp;&nbsp;<%= t("budgets.index.section_footer.help_text_6_2_2_2") %></p>
-      <p>&nbsp;&nbsp;&nbsp;<%= t("budgets.index.section_footer.help_text_6_2_2_3") %></p>
+      <p>&nbsp;&nbsp;&nbsp;<%= t("budgets.index.section_footer.help_text_6_2_2_3") %></p> -->
 
 
       <!--<p><%= t("budgets.index.section_footer.help_text_3",
@@ -269,7 +272,7 @@
 <!-- Metemos todo el código(pasado por la diputación) para que la funcionalidad Java Script Tenga Efecto -->
 <div class="row">
   <div class="small-12 column">
-    <div id="section_zona" class="margin" data-magellan-target="section_zona">
+    <!--<div id="section_zona" class="margin" data-magellan-target="section_zona">
         <p class="lead">
           <strong><%= t("budgets.index.section_footer.help_text_6") %></strong>
         </p>
@@ -278,8 +281,8 @@
         <p><a href="users/sign_up"><%= t("budgets.index.section_footer.help_text_9")%></a></p>  
          <!--<p><%= link_to t("budgets.index.section_footer.help_text_9"), "#section_zona" %> </p>-->
          <!-- mapa tambien en: http://neoris05.aprosi.net/consul/consul.html y https://consul.diputaciondevalladolid.es/ -->
-	     <iframe  src="https://consul.diputaciondevalladolid.es/" width="900" height="1200" allowtransparency="true" marginwidth="0" marginheight="0" frameborder="no" scrolling="no">
-	  	 </iframe>
-    </div>
+	     <!--<iframe  src="https://consul.diputaciondevalladolid.es/" width="900" height="1200" allowtransparency="true" marginwidth="0" marginheight="0" frameborder="no" scrolling="no">
+	  	 </iframe> ->
+    </div> -->
   </div>  
 </div>
