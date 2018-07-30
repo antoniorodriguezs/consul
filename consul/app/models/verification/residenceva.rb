@@ -108,3 +108,4 @@ class Verification::Residenceva
 		self.document_number = self.document_number.gsub(/[^a-z0-9]+/i, "").upcase unless self.document_number.blank?
 	end
 end
+
