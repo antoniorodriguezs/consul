@@ -40,8 +40,8 @@ class ApplicationController < ActionController::Base
     end
 
     def verify_lock
-      if current_user.locked?
-        redirect_to account_path, alert: t('verification.alert.lock')
+	  if false
+        #redirect_to account_path, alert: t('verification.alert.lock')
       end
     end
 
